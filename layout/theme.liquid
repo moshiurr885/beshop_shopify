@@ -9,12 +9,47 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {{ content_for_header }}
     <!-- Header hook for plugins -->
+ 
+		
+    {{ 'bootstrap.min.css' | asset_url | stylesheet_tag }}
+    {{ 'font-awesome.min.css' | asset_url | stylesheet_tag }}
+    {{ 'materialdesignicons.min.css' | asset_url | stylesheet_tag }}
+    {{ 'settings.css' | asset_url | stylesheet_tag }}
+    {{ 'layers.css' | asset_url | stylesheet_tag }}
+    {{ 'animate.css' | asset_url | stylesheet_tag }}
+    {{ 'nice-select.css' | asset_url | stylesheet_tag }}
+    {{ 'owl.carousel.min.css' | asset_url | stylesheet_tag }}
+    {{ 'responsive.css' | asset_url | stylesheet_tag }}
+    {{ 'estyle.css' | asset_url | stylesheet_tag }}
     {{ 'application.css' | asset_url | stylesheet_tag }}
-    {{ 'application.js' | asset_url | script_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
     <main role="main">
       {{ content_for_layout }}
     </main>
+
+		
+    {{ 'jquery-3.3.1.min.js' | asset_url | script_tag }}
+    {{ 'popper.min.js' | asset_url | script_tag }}
+    {{ 'bootstrap.min.js' | asset_url | script_tag }}
+    {{ 'jquery.themepunch.tools.min.js' | asset_url | script_tag }}
+    {{ 'jquery.themepunch.revolution.min.js' | asset_url | script_tag }}
+    {{ 'revolution.extension.actions.min.js' | asset_url | script_tag }}
+    {{ 'revolution.extension.video.min.js' | asset_url | script_tag }}
+    {{ 'revolution.extension.slideanims.min.js' | asset_url | script_tag }}
+    {{ 'revolution.extension.layeranimation.min.js' | asset_url | script_tag }}
+    {{ 'revolution.extension.navigation.min.js' | asset_url | script_tag }}
+    {{ 'jquery.nice-select.min.js' | asset_url | script_tag }}
+    {{ 'owl.carousel.min.js' | asset_url | script_tag }}
+    {{ 'imagesloaded.pkgd.min.js' | asset_url | script_tag }}
+    {{ 'isotope.pkgd.min.js' | asset_url | script_tag }}
+    {{ 'jquery.flipster.min.js' | asset_url | script_tag }}
+    {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'jquery.waypoints.min.js' | asset_url | script_tag }}
+    {{ 'jquery.counterup.min.js' | asset_url | script_tag }}
+    {{ 'jquery.magnific-popup.min.js' | asset_url | script_tag }}
+    {{ 'theme.js' | asset_url | script_tag }}
+
   </body>
 </html>
